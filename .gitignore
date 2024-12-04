@@ -1,3 +1,8 @@
+# WebStorm IDE
+.idea/
+*.iml
+*.ipr
+
 # Logs
 logs
 *.log
