@@ -32,6 +32,45 @@ h3 {
     font-size: 1.4375rem;
 }
 
+/* Header */
+
+nav {
+    background-color: var(--primary-dark);
+    color: var(--ink-dark);
+    height: 5.375rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.8125rem;
+}
+
+nav ul {
+    width: 33.9375rem;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: var(--ink-light);
+    text-decoration: none;
+    font-size: 1.4375rem;
+    font-weight: bold;
+}
+
+a.active {
+    color: var(--ink-tertiary);
+}
+
+a.active:hover {
+    color: var(--ink-tertiary);
+}
+
+a:hover {
+    color: #1A394C;
+}
+
 /* Main */
 
 .background-arrow {
