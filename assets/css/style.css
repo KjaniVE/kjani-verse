@@ -74,10 +74,11 @@ a:hover {
 /* Main */
 
 .background-arrow {
-    rotate: 90deg;
+    position: absolute;
+    bottom: 0;
     width: auto;
-    height: 4.8125rem;
-    animation: bounce 1s infinite;
+    height: 8.8125rem;
+    animation: bounce 3s infinite;
 }
 
 @keyframes bounce {
@@ -85,10 +86,10 @@ a:hover {
         transform: translateY(0);
     }
     40% {
-        transform: translateX(-20px);
+        transform: translateY(-20px);
     }
     60% {
-        transform: translateX(-10px);
+        transform: translateY(-10px);
     }
 }
 
@@ -96,6 +97,55 @@ img {
     width: 6.25rem;
     height: 6.25rem;
     border-radius: 50%;
+}
+
+.introduction {
+    position: relative;
+    height: 74vh;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 4.8125rem;
+    padding-top: 14.0625rem;
+    margin: 0 auto 2rem;
+}
+
+.introduction p {
+    color: var(--ink-tertiary);
+    margin-top: 0.5rem;
+}
+
+.introduction header {
+    margin-bottom: 13.875rem;
+}
+
+
+.introduction article {
+    margin-bottom: 4.8125rem;
+    align-self: flex-end;
+    text-align: end;
+    width: 56rem;
+}
+
+.introduction article h3 {
+    color: var(--ink-tertiary);
+    padding-top: 3.1875rem;
+}
+
+.introduction div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Push the button and arrow to the bottom */
+}
+
+.introduction div button {
+    background-color: var(--primary-light);
+    color: var(--ink-dark);
+    border-radius: 0.5rem;
+    border: none;
+    padding: 1.25rem 2rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /* Footer */
