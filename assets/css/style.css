@@ -1,0 +1,10 @@
+:root {
+    /* Define color variables */
+    --primary-dark: #121212; /* Dark Blue */
+    --primary-medium: #1F1F1F; /* Blue Gray */
+    --primary-light: #2C2C2C; /* Light Gray */
+
+    --ink-dark: #E0E0E0; /* White */
+    --ink-light: #FFFFFF; /* Light Background */
+    --ink-tertiary: #6EA3A8; /* Light Gray */
+}
