@@ -32,6 +32,33 @@ h3 {
     font-size: 1.4375rem;
 }
 
+/* Main */
+
+.background-arrow {
+    rotate: 90deg;
+    width: auto;
+    height: 4.8125rem;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateX(-20px);
+    }
+    60% {
+        transform: translateX(-10px);
+    }
+}
+
+img {
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+}
+
 /* Footer */
 
 footer {
