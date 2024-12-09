@@ -1,0 +1,119 @@
+:root {
+    /* Define color variables */
+    --primary-dark: #121212;
+    --primary-medium: #1F1F1F;
+    --primary-light: #2C2C2C;
+
+    --ink-dark: #E0E0E0;
+    --ink-light: #FFFFFF;
+    --ink-tertiary: #6EA3A8;
+}
+
+body {
+    background-color: var(--primary-medium);
+    color: var(--ink-dark);
+    font-family: "JetBrains Mono", monospace, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    color: var(--ink-light);
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.4875rem;
+}
+
+h2 {
+    font-size: 2.075rem;
+}
+
+h3 {
+    font-size: 1.4375rem;
+}
+
+h4 {
+    font-size: 1.125rem;
+}
+
+/* Header */
+
+nav {
+    background-color: var(--primary-dark);
+    color: var(--ink-dark);
+    height: 5.375rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.8125rem;
+}
+
+nav ul {
+    width: 33.9375rem;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: var(--ink-light);
+    text-decoration: none;
+    font-size: 1.4375rem;
+    font-weight: bold;
+}
+
+a.active {
+    color: var(--ink-tertiary);
+}
+
+a.active:hover {
+    color: var(--ink-tertiary);
+}
+
+a:hover {
+    color: #1A394C;
+}
+
+/* Main */
+
+section {
+    width: 75%;
+    display: flex;
+    margin: 0 auto 2rem;
+    flex-direction: column;
+}
+
+button {
+    background-color: var(--primary-light);
+    color: var(--ink-dark);
+    border-radius: 0.5rem;
+    border: var(--primary-light) 0.125rem solid;
+    padding: 0.625rem 1.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--ink-tertiary) !important;
+    border: #1A394C 0.125rem solid;
+    color: var(--ink-light);
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--primary-dark);
+    color: var(--ink-dark);
+    padding: 3.125rem 2.25rem;
+    position: relative; /* Allows absolute positioning of the image */
+    text-align: center; /* Centers the text */
+}
+
+footer img {
+    width: 3.125rem;
+    height: 3.125rem;
+    position: absolute; /* Position image relative to the footer */
+    right: 2.25rem; /* Adjust the image from the right edge */
+    top: 50%; /* Vertically center the image */
+    transform: translateY(-50%); /* Fine-tune vertical alignment */
+}
