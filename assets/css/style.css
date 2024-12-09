@@ -75,6 +75,30 @@ a:hover {
     color: #1A394C;
 }
 
+/* Main */
+
+section {
+    width: 75%;
+    display: flex;
+    margin: 0 auto 2rem;
+    flex-direction: column;
+}
+
+button {
+    background-color: var(--primary-light);
+    color: var(--ink-dark);
+    border-radius: 0.5rem;
+    border: var(--primary-light) 0.125rem solid;
+    padding: 0.625rem 1.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--ink-tertiary) !important;
+    border: #1A394C 0.125rem solid;
+    color: var(--ink-light);
+}
+
 /* Footer */
 
 footer {

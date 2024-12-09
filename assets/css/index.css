@@ -27,13 +27,6 @@ img {
     border-radius: 50%;
 }
 
-section {
-    width: 75%;
-    display: flex;
-    margin: 0 auto 2rem;
-    flex-direction: column;
-}
-
 .introduction {
     position: relative;
     height: 80vh;
@@ -70,13 +63,7 @@ section {
 }
 
 .introduction div button {
-    background-color: var(--primary-light);
-    color: var(--ink-dark);
-    border-radius: 0.5rem;
-    border: none;
     padding: 1.25rem 2rem;
-    font-weight: bold;
-    cursor: pointer;
 }
 
 .edu-proj {
@@ -97,10 +84,10 @@ section {
     padding: 0.9375rem 1.875rem;
 }
 
-.edu-proj div button.active {
+.edu-proj div button {
     background-color: var(--primary-dark);
     color: var(--ink-dark);
-    cursor: pointer;
+    padding: 0.625rem 13.375rem;
 }
 
 .edu-proj .selection-buttons,
@@ -112,14 +99,10 @@ section {
     border-radius: 0.5rem;
 }
 
-.edu-proj div button {
-    background-color: #1A394C;
-    border: none;
+.edu-proj div button.active, .edu-proj div button.active:hover {
+    background-color: #1A394C !important;
     color: var(--ink-tertiary);
-    border-radius: 0.5rem;
-    padding: 0.625rem 13.375rem;
-    font-weight: bold;
-    cursor: pointer;
+    border: #1A394C 0.125rem solid;
 }
 
 .edu-proj article {
