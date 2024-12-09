@@ -1,0 +1,76 @@
+/* Main */
+
+.background-arrow {
+    position: absolute;
+    bottom: 0;
+    width: auto;
+    height: 8.8125rem;
+    animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+img {
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+}
+
+.introduction {
+    position: relative;
+    height: 80vh;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 4.8125rem;
+    padding-top: 7.03125rem;
+    margin: 0 auto 2rem;
+}
+
+.introduction p {
+    color: var(--ink-tertiary);
+    margin-top: 0.5rem;
+}
+
+.introduction header {
+    margin-bottom: 6.9375rem;
+}
+
+
+.introduction article {
+    margin-bottom: 4.8125rem;
+    align-self: flex-end;
+    text-align: end;
+    max-width: 56rem;
+}
+
+.introduction article h3 {
+    color: var(--ink-tertiary);
+    padding-top: 3.1875rem;
+}
+
+.introduction div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Push the button and arrow to the bottom */
+}
+
+.introduction div button {
+    background-color: var(--primary-light);
+    color: var(--ink-dark);
+    border-radius: 0.5rem;
+    border: none;
+    padding: 1.25rem 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
