@@ -74,3 +74,91 @@ img {
     font-weight: bold;
     cursor: pointer;
 }
+
+.edu-proj {
+    max-width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /*background-color: hotpink;*/
+    align-items: center;
+}
+
+.edu-proj header {
+    align-self: flex-start;
+    margin-bottom: 4.8125rem;
+}
+
+.selection-buttons {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-light);
+    border-radius: 0.5rem;
+    padding: 0.9375rem 1.875rem;
+}
+
+.edu-proj div button.active {
+    background-color: var(--primary-dark);
+    color: var(--ink-dark);
+    cursor: pointer;
+}
+
+.edu-proj .selection-buttons,
+.edu-proj article {
+    box-sizing: border-box;
+    width: 75%;
+    margin: 0 auto;
+    border: #1A394C 0.125rem solid;
+    border-radius: 0.5rem;
+}
+
+.edu-proj div button {
+    background-color: #1A394C;
+    border: none;
+    color: var(--ink-tertiary);
+    border-radius: 0.5rem;
+    padding: 0.625rem 13.375rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.edu-proj article {
+    margin-bottom: 4.8125rem;
+    align-self: center;
+    position: relative;
+}
+
+.edu-proj article::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5.125rem;
+    width: 2px; /* Set the width of the line */
+    background-color: var(--ink-light); /* Set the color of the line */
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.edu-proj article div.edu {
+    padding: 2rem;
+    display: flex;
+    align-items: stretch;
+
+}
+
+.edu-proj article div img {
+    margin-right: 1rem; /* Add some space between the image and the text */
+    align-self: center;
+}
+
+.edu-proj article div .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.edu-proj article div p,
+.edu-proj article div h3 {
+    margin: 0; /* Remove default margins */
+}
