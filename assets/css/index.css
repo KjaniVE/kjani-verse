@@ -8,6 +8,7 @@
     animation: bounce 3s infinite;
 }
 
+/* Bouncing animation for the arrow */
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
@@ -26,15 +27,18 @@ img {
     border-radius: 50%;
 }
 
+section {
+    width: 75%;
+    display: flex;
+    margin: 0 auto 2rem;
+    flex-direction: column;
+}
+
 .introduction {
     position: relative;
     height: 80vh;
-    width: 75%;
-    display: flex;
-    flex-direction: column;
     gap: 4.8125rem;
     padding-top: 7.03125rem;
-    margin: 0 auto 2rem;
 }
 
 .introduction p {
@@ -62,7 +66,7 @@ img {
 .introduction div {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Push the button and arrow to the bottom */
+    align-items: center;
 }
 
 .introduction div button {
@@ -76,12 +80,8 @@ img {
 }
 
 .edu-proj {
-    max-width: 75%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    /*background-color: hotpink;*/
     align-items: center;
+    padding-bottom: 2rem;
 }
 
 .edu-proj header {
@@ -123,19 +123,19 @@ img {
 }
 
 .edu-proj article {
-    margin-bottom: 4.8125rem;
     align-self: center;
     position: relative;
 }
 
+/* White line behind the images */
 .edu-proj article::before {
     content: "";
     position: absolute;
     top: 0;
     bottom: 0;
     left: 5.125rem;
-    width: 2px; /* Set the width of the line */
-    background-color: var(--ink-light); /* Set the color of the line */
+    width: 2px;
+    background-color: var(--ink-light);
     transform: translateX(-50%);
     z-index: -1;
 }
@@ -148,7 +148,7 @@ img {
 }
 
 .edu-proj article div img {
-    margin-right: 1rem; /* Add some space between the image and the text */
+    margin-right: 1rem;
     align-self: center;
 }
 
@@ -156,9 +156,4 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.edu-proj article div p,
-.edu-proj article div h3 {
-    margin: 0; /* Remove default margins */
 }
