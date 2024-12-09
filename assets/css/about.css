@@ -3,3 +3,32 @@ img {
     height: 8.125rem;
     border-radius: 50%;
 }
+
+.education {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education header {
+    align-self: flex-start;
+}
+
+div.edu {
+    padding: 2rem;
+    display: flex;
+    align-items: stretch;
+
+}
+
+div img {
+    margin-right: 1rem;
+    align-self: center;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
