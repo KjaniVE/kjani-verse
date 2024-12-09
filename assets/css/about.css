@@ -4,6 +4,10 @@ img {
     border-radius: 50%;
 }
 
+section {
+    margin-top: 7.03125rem;
+}
+
 .education {
     display: flex;
     align-items: center;
