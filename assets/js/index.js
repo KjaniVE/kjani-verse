@@ -1,4 +1,5 @@
 import {_allData as DATA} from "./data/data.js";
+import {createProjectElement} from "./projects.js";
 
 init();
 
@@ -7,6 +8,7 @@ function init() {
     const selectionButtons = document.querySelectorAll(".selection-buttons button");
     showSelection(selectionButtons);
     renderEducation();
+    renderRecentProjects();
 }
 
 function smoothScroll() {
@@ -71,26 +73,19 @@ function createEducationElement(educationElement) {
 function renderProjects() {
     const projects = DATA.projects;
     const $canvas = document.querySelector(".edu-proj article");
+    const $template = document.querySelector("#proj").content.firstElementChild.cloneNode(true);
     $canvas.innerHTML = "";
 
     for (const project of projects) {
-        $canvas.insertAdjacentElement("beforeend", createProjectElement(project));
+        $canvas.insertAdjacentElement("beforeend", createProjectElement(project, $template));
     }
 }
 
-function createProjectElement(project) {
-    const $template = document.querySelector("#proj-tem").content.firstElementChild.cloneNode(true);
+function renderRecentProjects() {
+    const recentProject = DATA.projects[0];
+    const $canvas = document.querySelector(".recent-proj");
+    const $template = document.querySelector("#rec-proj").content.firstElementChild.cloneNode(true);
+    $canvas.innerHTML = "";
 
-    $template.querySelector("h3").textContent = project.title;
-    $template.querySelector("img").setAttribute("src", project.logo);
-    $template.querySelector("img").setAttribute("alt", project.alt);
-    $template.querySelector("a").setAttribute("href", project.github);
-    for (const technology of project.technologies) {
-        const $button = document.createElement("p");
-        $button.disabled = true;
-        $button.textContent = technology;
-        $template.querySelector(".technologies").insertAdjacentElement("beforeend", $button);
-    }
-
-    return $template;
+    $canvas.insertAdjacentElement("beforeend", createProjectElement(recentProject, $template));
 }
