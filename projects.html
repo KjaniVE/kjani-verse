@@ -9,13 +9,17 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/projects.css">
 
+    <script src="assets/js/projects.js" type="module"></script>
+
     <title>Kjani Van Eenaeme | Projects</title>
 </head>
 <body>
 
 <header>
     <nav>
-        <h2>Kjani Van Eenaeme</h2>
+        <a href="index.html">
+            <h2>Kjani Van Eenaeme</h2>
+        </a>
 
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -32,31 +36,48 @@
             <h2>My projects</h2>
         </header>
         <div class="proj-list">
-            <article>
-                <h3>Labyrinth</h3>
-                <img src="assets/media/labyrinth-logo.svg" alt="Logo Labyrinth Project">
-                <div>
-                    <button disabled>Java</button>
-                    <button disabled>HTML</button>
-                    <button disabled>CSS</button>
-                    <button disabled>JavaScript</button>
-                </div>
-            </article>
+            <a href="#" target="_blank">
+                <article>
+                    <h3>Labyrinth</h3>
+                    <img src="assets/media/labyrinth-logo.svg" alt="Logo Labyrinth Project">
+                    <div>
+                        <button disabled>Java</button>
+                        <button disabled>HTML</button>
+                        <button disabled>CSS</button>
+                        <button disabled>JavaScript</button>
+                    </div>
+                </article>
+            </a>
 
-            <article>
-                <h3>Magic The Gathering Deck Builder</h3>
-                <img src="assets/media/magic-the-gathering-project-logo.webp"
-                     alt="Logo Magic The Gathering Deck Builder Project">
-                <div>
-                    <button disabled>JavaScript</button>
-                </div>
-            </article>
+            <a href="https://github.com/KjaniVE/MTGDeckBuilder" target="_blank">
+                <article>
+                    <h3>Magic The Gathering Deck Builder</h3>
+                    <img src="assets/media/magic-the-gathering-project-logo.webp"
+                         alt="Logo Magic The Gathering Deck Builder Project">
+                    <div>
+                        <button disabled>JavaScript</button>
+                    </div>
+                </article>
+            </a>
         </div>
+
+        <template id="proj">
+                <a href="" target="_blank">
+                    <article>
+                        <h3>#</h3>
+                        <img src="#" alt="#">
+                        <div class="proj-tech">
+                            <button disabled>#</button>
+                        </div>
+                    </article>
+                </a>
+        </template>
     </section>
+
 </main>
 
 <footer>
-    <h3>© 2021 Kjani Van Eenaeme</h3>
+    <h3>© 2024 Kjani Van Eenaeme</h3>
     <a href="https://github.com/KjaniVE" target="_blank">
         <img src="assets/media/github-mark-white.svg" alt="Github Logo White">
     </a>

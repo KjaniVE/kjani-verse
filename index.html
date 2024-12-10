@@ -20,7 +20,9 @@
 
 <header>
     <nav>
-        <h2>Kjani Van Eenaeme</h2>
+        <a href="index.html">
+            <h2>Kjani Van Eenaeme</h2>
+        </a>
 
         <ul>
             <li><a href="#" class="active">Home</a></li>
@@ -56,8 +58,8 @@
             </h2>
         </header>
         <div class="selection-buttons">
-            <button class="active">Education</button>
-            <button>Projects</button>
+            <button class="active" data-target="education" disabled>Education</button>
+            <button data-target="projects">Projects</button>
         </div>
 
         <article>
@@ -105,6 +107,30 @@
             </div>
         </article>
     </section>
+    <template id="edu-tem">
+        <div class="edu">
+            <img src="" alt="">
+            <div class="text-container">
+                <p class="date">#</p>
+                <h3 class="institution">#</h3>
+                <p class="type">#</p>
+                <h4 class="degree">#</h4>
+            </div>
+        </div>
+    </template>
+    <template id="proj-tem">
+        <div class="proj">
+            <a href="" target="_blank">
+                <img src="assets/media/labyrinth-logo.svg" alt="Logo Labyrinth Project">
+            </a>
+            <div class="text-container">
+                <h3>Labyrinth</h3>
+                <div class="technologies">
+                </div>
+            </div>
+        </div>
+    </template>
+
 
     <section class="skills">
         <header>
@@ -125,17 +151,27 @@
     <section class="rec-proj">
         <header>
             <h2>
-                Recent Projects
+                Recent Project
             </h2>
         </header>
 
-        <h3>Coming Soon...</h3>
-
+        <div class="recent-proj">
+            <template id="rec-proj">
+                <a href="" target="_blank">
+                    <article>
+                        <h3>#</h3>
+                        <img src="#" alt="#">
+                        <div class="proj-tech">
+                        </div>
+                    </article>
+                </a>
+            </template>
+        </div>
     </section>
 </main>
 
 <footer>
-    <h3>© 2021 Kjani Van Eenaeme</h3>
+    <h3>© 2024 Kjani Van Eenaeme</h3>
     <a href="https://github.com/KjaniVE" target="_blank">
         <img src="assets/media/github-mark-white.svg" alt="Github Logo White">
     </a>

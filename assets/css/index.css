@@ -123,11 +123,14 @@ img {
     z-index: -1;
 }
 
-.edu-proj article div.edu {
+.edu-proj article div.edu, .edu-proj article div.proj {
     padding: 2rem;
     display: flex;
     align-items: stretch;
+}
 
+.edu-proj article div.edu h3, .edu-proj article div.proj h3 {
+    margin-bottom: 0.25rem;
 }
 
 .edu-proj article div img {
@@ -146,8 +149,43 @@ img {
     margin: 2rem auto  0;
 }
 
-.rec-proj h3{
-    text-align: center;
-    margin-top: 5rem;
-    height: 5rem;
+.recent-proj {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+}
+
+.recent-proj article {
+    margin: 2rem;
+    padding: 2rem;
+    background-color: var(--primary-light);
+    border-radius: 0.5rem;
+    border: #1A394C 0.125rem solid;
+}
+
+.recent-proj h3 {
+    max-width: 16.4375rem;
+    height: 3.75rem;
+    margin-bottom: 2rem;
+}
+
+.recent-proj img {
+    width: 23rem;
+    height: 16rem;
+    margin-bottom: 1rem;
+    border-radius: 0;
+}
+
+.recent-proj div {
+    position: absolute;
+    bottom: 2.5rem;
+}
+
+.recent-proj button {
+    padding: 0.3125rem 0.4375rem;
+    color: var(--ink-tertiary);
+    background-color: #1A394C;
 }
