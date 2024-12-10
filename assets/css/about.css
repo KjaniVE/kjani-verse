@@ -1,0 +1,53 @@
+img {
+    width: 8.125rem;
+    height: 8.125rem;
+    border-radius: 50%;
+}
+
+section {
+    margin-top: 7.03125rem;
+}
+
+.education {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education header {
+    align-self: flex-start;
+}
+
+div.edu {
+    padding: 2rem;
+    display: flex;
+    align-items: stretch;
+
+}
+
+div img {
+    margin-right: 1rem;
+    align-self: center;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about  p {
+    margin: 2rem;
+}
+
+.qualities header {
+    margin-bottom: 2rem;
+}
+
+.qualities article div {
+    margin: 2rem;
+}
+
+.qualities article div p {
+    margin: 2rem;
+}
