@@ -1,6 +1,8 @@
 import {_allData as DATA} from './data/data.js';
 
-init();
+if (window.location.href === "projects.html") {
+    init();
+}
 
 function init() {
     renderProjects(DATA.projects);
