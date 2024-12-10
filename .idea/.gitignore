@@ -2,6 +2,7 @@
 *.iml
 *.ipr
 workspace.xml
+sonarlint.xml
 
 # Logs
 logs
