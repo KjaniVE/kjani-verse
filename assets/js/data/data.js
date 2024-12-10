@@ -41,6 +41,13 @@ const _allData = {
 
     "projects": [
         {
+            "title": "Sapphire Items",
+            "logo": "assets/media/sapphire-items-logo.webp",
+            "alt": "Logo Sapphire Items Project",
+            "github": "https://github.com/KjaniVE/SapphireItems",
+            "technologies": ["Java"]
+        },
+        {
             "title": "Labyrinth",
             "logo": "assets/media/labyrinth-logo.svg",
             "alt": "Logo Labyrinth Project",
