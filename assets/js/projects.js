@@ -16,7 +16,6 @@ function renderProjects(data) {
         const $template = document.querySelector("#proj").content.firstElementChild.cloneNode(true);
         $canvas.insertAdjacentElement("beforeend", createProjectElement(project, $template));
     }
-
 }
 
 function createProjectElement(project, template) {
