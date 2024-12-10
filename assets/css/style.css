@@ -67,11 +67,18 @@ nav ul {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 nav ul li a {
     color: var(--ink-light);
-    text-decoration: none;
     font-size: 1.4375rem;
     font-weight: bold;
+}
+
+nav ul li a:visited {
+    text-decoration: none;
 }
 
 a.active {
