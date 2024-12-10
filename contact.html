@@ -33,27 +33,33 @@
         </header>
         <!-- modify this form HTML and place wherever you want your form -->
         <form action="https://formspree.io/f/mgvebzqa" method="POST">
-            <label>
+
+            <h1>Get In Touch</h1>
+            <label for="name">
                 Your name:
-                <input type="text" name="name">
             </label>
-            <label>
+            <input id="name" type="text" name="name" placeholder="name">
+            <label for="email">
                 Your email:
-                <input type="email" name="email">
             </label>
-            <label>
+            <input id="email" type="email" name="email" placeholder="email">
+            <label for="content">
                 Your message:
-                <textarea name="message"></textarea>
             </label>
+            <textarea id="content" name="message" placeholder="content">
+
+            </textarea>
             <!-- your other form fields go here -->
             <button type="submit">Send</button>
-        </form>
 
-        <div>
-            <h3>Or contact me via:</h3>
-            <a href="mailto:kjani.ve@gmail.com"><img src="assets/media/mail-logo.svg" alt="Mail"></a>
-            <a href=""><img src="assets/media/linkedin-logo.svg" alt="Linkedin"></a>
-        </div>
+            <div class="alt-contact">
+                <h3>Or contact me via:</h3>
+                <div class="contact-img">
+                    <a href="mailto:kjani.ve@gmail.com" target="_blank"><img src="assets/media/mail-logo.svg" alt="Mail"></a>
+                    <a href="https://www.linkedin.com/in/kjani-van-eenaeme-48098523a" target="_blank"><img src="assets/media/linkedin-logo.svg" alt="Linkedin"></a>
+                </div>
+            </div>
+        </form>
     </section>
 </main>
 
