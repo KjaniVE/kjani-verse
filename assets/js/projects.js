@@ -1,6 +1,6 @@
 import {_allData as DATA} from './data/data.js';
 
-if (window.location.href === "projects.html") {
+if (window.location.pathname === "/projects.html") {
     init();
 }
 
