@@ -36,3 +36,18 @@ div img {
     justify-content: center;
 }
 
+.about  p {
+    margin: 2rem;
+}
+
+.qualities header {
+    margin-bottom: 2rem;
+}
+
+.qualities article div {
+    margin: 2rem;
+}
+
+.qualities article div p {
+    margin: 2rem;
+}
