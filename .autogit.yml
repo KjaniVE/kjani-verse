@@ -1,17 +1,17 @@
 #######################################################################################
 # Autogit - Config and deploy hooks                                                   #
 #######################################################################################
-# This YAML file should be present in the root folder of your codebase               #
-#######################################################################################
-
-# Hooks are Bash scripts executed at different stages during deployment.
-# Arguments: $1 = branch, $2 = commit id, $3 = checkout folder
 
 hooks:
   # SETUP: Create folder structure for the newest release
   setup_before: |
     echo "Setting up folder structure for the new release"
-    mkdir -p /data/sites/web/kjanivaneenaemebe/www
+    # Ensure the www folder exists
+    if [ ! -d "/data/sites/web/kjanivaneenaemebe/www" ]; then
+      echo "Creating www folder"
+      mkdir -p /data/sites/web/kjanivaneenaemebe/www
+    fi
+    exit 0
 
   setup_after: |
     echo "Setup completed for the new release"
