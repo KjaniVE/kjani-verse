@@ -9,6 +9,17 @@
     --ink-tertiary: #6EA3A8;
 }
 
+html, body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
 body {
     background-color: var(--primary-medium);
     color: var(--ink-dark);
