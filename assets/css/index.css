@@ -123,11 +123,14 @@ img {
     z-index: -1;
 }
 
-.edu-proj article div.edu {
+.edu-proj article div.edu, .edu-proj article div.proj {
     padding: 2rem;
     display: flex;
     align-items: stretch;
+}
 
+.edu-proj article div.edu h3, .edu-proj article div.proj h3 {
+    margin-bottom: 0.25rem;
 }
 
 .edu-proj article div img {
