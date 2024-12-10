@@ -42,3 +42,10 @@ hooks:
     exit 0
   cleanup_after: |
     exit 0
+
+  # Shared_folders
+shared_folders:
+  - www/img
+  - www/js
+  - www/css
+  - www/media
