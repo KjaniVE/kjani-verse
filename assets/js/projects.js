@@ -10,11 +10,10 @@ function init() {
 
 function renderProjects(data) {
     const $canvas = document.querySelector(".proj-list");
-    const $template = document.querySelector("#proj").content.firstElementChild.cloneNode(true);
-
     $canvas.innerHTML = "";
 
     for (const project of data) {
+        const $template = document.querySelector("#proj").content.firstElementChild.cloneNode(true);
         $canvas.insertAdjacentElement("beforeend", createProjectElement(project, $template));
     }
 
