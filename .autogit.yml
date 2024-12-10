@@ -1,51 +1,66 @@
 #######################################################################################
-# Autogit - config and deploy hooks                                                   #
+# Autogit - Config and deploy hooks                                                   #
 #######################################################################################
-# This YAML file, named as ".autogit.yml" should be present                           #
-# in the root folder of your codebase                                                 #
+# This YAML file should be present in the root folder of your codebase               #
 #######################################################################################
 
-# Example shared files and folders:
-# shared_files: [ etc/config.yml ]
-# shared_folders: [ var/log ]
-
-# Hooks should be Bash shell scripts and get executed at different stages during deploy
+# Hooks are Bash scripts executed at different stages during deployment.
 # Arguments: $1 = branch, $2 = commit id, $3 = checkout folder
+
 hooks:
-# SETUP: Create folder structure for newest release
+  # SETUP: Create folder structure for the newest release
   setup_before: |
-    exit 0
+    echo "Setting up folder structure for the new release"
+    mkdir -p /data/sites/web/kjanivaneenaemebe/www
+
   setup_after: |
+    echo "Setup completed for the new release"
     exit 0
 
-# INSTALL: Put code in release folder
+  # INSTALL: Put the code in the release folder
   install_before: |
-    exit 0
+    echo "Preparing for installation"
+    cd /data/sites/web/kjanivaneenaemebe/www
+
   install_after: |
+    echo "Code installed in the release folder"
     exit 0
 
-# SHAREDSYMLINK: Create symlink to shared files and folders
-#                present at every release (config, logs, ...)
+  # SHAREDSYMLINK: Create symlinks for shared files and folders
   sharedsymlink_before: |
-    exit 0
+    echo "Creating symlinks for shared files and folders"
+    ln -s /data/sites/web/kjanivaneenaemebe/shared/config.yml /data/sites/web/kjanivaneenaemebe/www/config.yml
+
   sharedsymlink_after: |
+    echo "Symlinks created for shared files and folders"
     exit 0
 
-# SYMLINK: Set current symlink to newest release
+  # SYMLINK: Set the current symlink to the newest release
   symlink_before: |
-    exit 0
+    echo "Setting current symlink to the newest release"
+    ln -sfn /data/sites/web/kjanivaneenaemebe/www /data/sites/web/kjanivaneenaemebe/current
+
   symlink_after: |
+    echo "Symlink to the newest release set"
     exit 0
 
-# CLEANUP: Cleanup old releases, two most recent releases remaining
+  # CLEANUP: Cleanup old releases, keeping two most recent releases
   cleanup_before: |
-    exit 0
+    echo "Cleaning up old releases"
+    cd /data/sites/web/kjanivaneenaemebe/
+    ls -t | grep -E 'release-' | tail -n +3 | xargs rm -rf
+
   cleanup_after: |
+    echo "Old releases cleaned up"
     exit 0
 
-  # Shared_folders
+# Shared folders: These are the folders you want to persist across releases (e.g., uploads, media)
 shared_folders:
-  - www/img
-  - www/js
-  - www/css
-  - www/media
+  - /data/sites/web/kjanivaneenaemebe/www/img
+  - /data/sites/web/kjanivaneenaemebe/www/js
+  - /data/sites/web/kjanivaneenaemebe/www/css
+  - /data/sites/web/kjanivaneenaemebe/www/media
+
+# Shared files: These are the configuration files you want to persist across releases
+shared_files:
+  - /data/sites/web/kjanivaneenaemebe/config.yml
