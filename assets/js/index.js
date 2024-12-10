@@ -73,12 +73,27 @@ function createEducationElement(educationElement) {
 function renderProjects() {
     const projects = DATA.projects;
     const $canvas = document.querySelector(".edu-proj article");
-    const $template = document.querySelector("#proj").content.firstElementChild.cloneNode(true);
     $canvas.innerHTML = "";
+    console.log(projects);
 
     for (const project of projects) {
-        $canvas.insertAdjacentElement("beforeend", createProjectElement(project, $template));
+        const $template = document.querySelector("#proj-tem").content.firstElementChild.cloneNode(true);
+        $canvas.insertAdjacentElement("beforeend", createRenderProjectsElement(project, $template));
     }
+}
+
+function createRenderProjectsElement(project, template) {
+    template.querySelector("h3").textContent = project.title;
+    template.querySelector("img").setAttribute("src", project.logo);
+    template.querySelector("img").setAttribute("alt", project.alt);
+    template.querySelector("a").setAttribute("href", project.github);
+    for (const technology of project.technologies) {
+        const $p = document.createElement("p");
+        $p.textContent = technology;
+        template.querySelector(".technologies").insertAdjacentElement("beforeend", $p);
+    }
+
+    return template;
 }
 
 function renderRecentProjects() {
