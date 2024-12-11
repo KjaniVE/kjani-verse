@@ -37,7 +37,6 @@ button {
     margin-bottom: 2rem;
 }
 
-.proj-list div {
-    position: absolute;
-    bottom: 2.5rem;
+.proj-list button {
+    margin-top: 0.5rem;
 }
