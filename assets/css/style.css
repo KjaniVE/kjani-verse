@@ -18,10 +18,11 @@ html, body {
 
 main {
     flex: 1;
+    background-color: var(--primary-medium);
 }
 
 body {
-    background-color: var(--primary-medium);
+    background-color: var(--primary-dark);
     color: var(--ink-dark);
     font-family: "JetBrains Mono", monospace, sans-serif;
 }
@@ -50,7 +51,6 @@ h4 {
 /* Header */
 
 nav {
-    background-color: var(--primary-dark);
     color: var(--ink-dark);
     height: 5.375rem;
     display: flex;
