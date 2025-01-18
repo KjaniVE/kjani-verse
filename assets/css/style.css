@@ -32,12 +32,12 @@ h1, h2, h3, h4 {
     font-weight: bold;
 }
 
-h2 {
-    font-size: 2.4875rem;
-}
-
 h1 {
     font-size: 2.075rem;
+}
+
+h2 {
+    font-size: 2.4875rem;
 }
 
 h3 {
@@ -75,20 +75,6 @@ nav ul li a {
     color: var(--ink-light);
     font-size: 1.4375rem;
     font-weight: bold;
-}
-
-@media (max-width: 840px) {
-    nav {
-        height: 4.85rem;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    nav ul li a {
-        font-size: 1.2rem;
-    }
 }
 
 nav ul li a:visited {
@@ -148,4 +134,62 @@ footer img {
     right: 2.25rem; /* Adjust the image from the right edge */
     top: 50%; /* Vertically center the image */
     transform: translateY(-50%); /* Fine-tune vertical alignment */
+}
+
+@media screen and (min-width: 401px) and (max-width: 840px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.875rem;
+    }
+
+    h3 {
+        font-size: 1.125rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        width: 30rem;
+    }
+
+    footer {
+        padding: 2.5rem 1.75rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    h2 {
+        font-size: 1.625rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: 0.875rem;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    footer {
+        padding: 2.25rem 1.5rem;
+    }
+
+    footer img {
+        width: 2.5rem;
+        height: 2.5rem;
+        right: 1rem;
+    }
 }

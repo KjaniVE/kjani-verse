@@ -189,3 +189,59 @@ img {
     color: var(--ink-tertiary);
     background-color: #1A394C;
 }
+
+@media screen and (max-width: 400px) {
+    .introduction {
+        padding-top: 3.1rem;
+        gap: 0;
+    }
+
+    .introduction header {
+        margin-bottom: 3rem;
+    }
+
+    .background-arrow {
+        height: 4rem;
+    }
+
+    .edu-proj div button {
+        padding: 0.625rem 1.875rem;
+    }
+
+    .edu-proj {
+        width: 100%;
+    }
+
+    .edu-proj header {
+        width: 75%;
+        align-self: center;
+    }
+
+    img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .edu-proj p {
+        font-size: 0.70rem;
+    }
+
+    .edu-proj .selection-buttons {
+        padding: 0.625rem 1.25rem;
+    }
+
+    .skills div button {
+        padding: 0.3125rem 0.4375rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .recent-proj img {
+        width: 15rem;
+        height: 10rem;
+    }
+
+    .recent-proj h3 {
+        height: 1rem;
+    }
+
+}
