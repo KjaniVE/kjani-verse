@@ -130,35 +130,15 @@ footer {
 footer img {
     width: 3.125rem;
     height: 3.125rem;
-    position: absolute; /* Position image relative to the footer */
-    right: 2.25rem; /* Adjust the image from the right edge */
-    top: 50%; /* Vertically center the image */
-    transform: translateY(-50%); /* Fine-tune vertical alignment */
+    position: absolute;
+    right: 2.25rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-@media screen and (min-width: 401px) and (max-width: 840px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    h2 {
-        font-size: 1.875rem;
-    }
-
-    h3 {
-        font-size: 1.125rem;
-    }
-
-    h4 {
-        font-size: 1rem;
-    }
-
+@media screen and (max-width: 900px) {
     nav ul {
-        width: 30rem;
-    }
-
-    footer {
-        padding: 2.5rem 1.75rem;
+        display: none;
     }
 }
 
