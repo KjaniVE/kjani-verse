@@ -40,3 +40,14 @@ button {
 .proj-list button {
     margin-top: 0.5rem;
 }
+
+@media screen and (max-width: 400px) {
+    img {
+        width: 15rem;
+        height: 9rem;
+    }
+
+    .proj-list h3 {
+        height: auto;
+    }
+}
