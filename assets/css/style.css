@@ -136,7 +136,7 @@ footer img {
     transform: translateY(-50%);
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 630px) {
     footer {
         padding: 2.25rem 1.5rem;
         text-align: justify;
@@ -150,15 +150,28 @@ footer img {
 }
 
 @media screen and (max-width: 900px) {
+
+    h1 {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+    }
+
     nav ul {
-        display: none;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 1rem;
     }
 }
 
 @media screen and (max-width: 480px) {
-    h1 {
-        font-size: 1.25rem;
-    }
 
     h2 {
         font-size: 1.625rem;
@@ -170,9 +183,5 @@ footer img {
 
     h4 {
         font-size: 0.875rem;
-    }
-
-    nav ul {
-        display: none;
     }
 }
