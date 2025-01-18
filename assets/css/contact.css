@@ -1,4 +1,4 @@
-h1 {
+form h2 {
     margin-top: 1rem;
 }
 
@@ -8,7 +8,7 @@ section header {
 
 form {
     width: 37.125rem;
-    height: 43.375rem;
+    height: 40rem;
     align-self: center;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ form {
 label {
     font-size: 1.5rem;
     align-self: flex-start;
-    margin: 2rem;
+    margin: 1.5rem;
 }
 
 
@@ -40,7 +40,7 @@ input, textarea, label {
 input, textarea {
     width: 50%;
     height: 2rem;
-    margin: 0.5rem;
+    margin-top: 0.5rem;
     background-color: #303030;
     border: none;
     border-bottom: white 0.125rem solid;
@@ -88,4 +88,29 @@ img {
 
 a:nth-child(1) {
     margin-left: 0;
+}
+
+@media screen and (max-width: 630px) {
+    form {
+        width: 90%;
+        height: auto;
+    }
+
+    form h2 {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+    }
+
+    label {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+
+    input, textarea {
+        width: 80%;
+    }
+
+    textarea {
+        height: 3.5rem;
+    }
 }

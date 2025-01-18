@@ -4,17 +4,15 @@ import {createProjectElement} from "./projects.js";
 init();
 
 function init() {
-    document.querySelector(".introduction button").addEventListener("click", smoothScroll);
+    document.querySelector(".introduction button").addEventListener("click", navigateToAbout);
     const selectionButtons = document.querySelectorAll(".selection-buttons button");
     showSelection(selectionButtons);
     renderEducation();
     renderRecentProjects();
 }
 
-function smoothScroll() {
-    document.querySelector(".edu-proj").scrollIntoView({
-        behavior: 'smooth'
-    });
+function navigateToAbout() {
+    window.location.href = "about.html";
 }
 
 function showSelection(selectionButtons) {
