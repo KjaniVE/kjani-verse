@@ -41,7 +41,7 @@ button {
     margin-top: 0.5rem;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
     img {
         width: 15rem;
         height: 9rem;

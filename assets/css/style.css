@@ -123,8 +123,8 @@ footer {
     background-color: var(--primary-dark);
     color: var(--ink-dark);
     padding: 3.125rem 2.25rem;
-    position: relative; /* Allows absolute positioning of the image */
-    text-align: center; /* Centers the text */
+    position: relative;
+    text-align: center;
 }
 
 footer img {
@@ -136,13 +136,26 @@ footer img {
     transform: translateY(-50%);
 }
 
+@media screen and (max-width: 440px) {
+    footer {
+        padding: 2.25rem 1.5rem;
+        text-align: justify;
+    }
+
+    footer img {
+        width: 2.5rem;
+        height: 2.5rem;
+        right: 1rem;
+    }
+}
+
 @media screen and (max-width: 900px) {
     nav ul {
         display: none;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     h1 {
         font-size: 1.25rem;
     }
@@ -161,16 +174,5 @@ footer img {
 
     nav ul {
         display: none;
-    }
-
-    footer {
-        padding: 2.25rem 1.5rem;
-        text-align: justify;
-    }
-
-    footer img {
-        width: 2.5rem;
-        height: 2.5rem;
-        right: 1rem;
     }
 }
