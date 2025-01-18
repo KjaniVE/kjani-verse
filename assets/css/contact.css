@@ -89,3 +89,28 @@ img {
 a:nth-child(1) {
     margin-left: 0;
 }
+
+@media screen and (max-width: 400px) {
+    form {
+        width: 90%;
+        height: auto;
+    }
+
+    form h2 {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+    }
+
+    label {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+
+    input, textarea {
+        width: 80%;
+    }
+
+    textarea {
+        height: 3.5rem;
+    }
+}
