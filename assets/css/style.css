@@ -31,11 +31,11 @@ h1, h2, h3, h4 {
     font-weight: bold;
 }
 
-h1 {
+h2 {
     font-size: 2.4875rem;
 }
 
-h2 {
+h1 {
     font-size: 2.075rem;
 }
 
@@ -75,6 +75,20 @@ nav ul li a {
     color: var(--ink-light);
     font-size: 1.4375rem;
     font-weight: bold;
+}
+
+@media (max-width: 840px) {
+    nav {
+        height: 4.85rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+    }
 }
 
 nav ul li a:visited {
