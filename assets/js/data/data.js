@@ -51,7 +51,7 @@ const _allData = {
             "title": "Labyrinth",
             "logo": "assets/media/labyrinth-logo.svg",
             "alt": "Logo Labyrinth Project",
-            "github": "#",
+            "github": "https://github.com/KjaniVE/labyrinth-server",
             "technologies": ["Java", "HTML", "CSS", "JavaScript"]
         },
         {
