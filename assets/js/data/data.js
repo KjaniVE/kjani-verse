@@ -15,31 +15,16 @@ const _allData = {
             "institution": "Howest",
             "type": "University of applied sciences",
             "degree": "Bachelor Applied Computer Science"
-        },
-        {
-            "logo": "assets/media/richtpunt_campus_eeklo-logo.svg",
-            "alt": "Logo Richtpunt Campus Eeklo",
-            "date": "Jan 2021 - Jun 2023",
-            "institution": "Richtpunt Campus Eeklo",
-            "degree": "Electricity - Electronics"
-        },
-        {
-            "logo": "assets/media/richtpunt_campus_eeklo-logo.svg",
-            "alt": "Logo Richtpunt Campus Eeklo",
-            "date": "Sep 2018 - Jan 2021",
-            "institution": "Richtpunt Campus Eeklo",
-            "degree": "Industrial Sciences"
-        },
-        {
-            "logo": "assets/media/ten-doorn-logo.svg",
-            "alt": "Logo College Ten Doorn",
-            "date": "Sep 2017 - Jun 2018",
-            "institution": "College Ten Doorn",
-            "degree": "Modern Sciences"
         }
     ],
 
     "projects": [
+        {
+            "title": "Home Lab",
+            "logo": "assets/media/homelab-logo.svg",
+            "alt": "Logo Home Lab Project",
+            "technologies": ["OPNsense", "Proxmox", "Networking", "Linux"]
+        },
         {
             "title": "Sapphire Items",
             "logo": "assets/media/sapphire-items-logo.webp",
