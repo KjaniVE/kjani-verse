@@ -22,8 +22,9 @@ const _allData = {
         {
             "title": "Home Lab",
             "logo": "assets/media/homelab-logo.svg",
-            "alt": "Logo Home Lab Project",
-            "technologies": ["OPNsense", "Proxmox", "Networking", "Linux"]
+            "alt": "Logo Home Lab",
+            "github": "https://github.com/KjaniVE",
+            "technologies": ["Proxmox", "OPNsense", "Linux", "Nginx", "Active Directory", "GitLab", "Docker"]
         },
         {
             "title": "Sapphire Items",
