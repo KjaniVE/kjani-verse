@@ -1,6 +1,6 @@
 # Kjani's Portfolio
 
-Welcome to the personal portfolio of Kjani Van Eenaeme, a 19-year-old CyberSecurity student. This portfolio showcases my journey in CyberSecurity, featuring my skills, education, projects, and aspirations.
+Welcome to the personal portfolio of Kjani Van Eenaeme, a 20-year-old CyberSecurity student. This portfolio showcases my journey in CyberSecurity, featuring my skills, education, projects, and aspirations.
 
 ## About This Project
 
