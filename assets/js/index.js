@@ -47,7 +47,7 @@ function showContent(content) {
 }
 
 function renderEducation() {
-    const education = DATA.education
+    const education = DATA.education;
     const $canvas = document.querySelector(".edu-proj article");
     $canvas.innerHTML = "";
 
@@ -72,7 +72,6 @@ function renderProjects() {
     const projects = DATA.projects;
     const $canvas = document.querySelector(".edu-proj article");
     $canvas.innerHTML = "";
-    console.log(projects);
 
     for (const project of projects) {
         const $template = document.querySelector("#proj-tem").content.firstElementChild.cloneNode(true);
@@ -84,7 +83,17 @@ function createRenderProjectsElement(project, template) {
     template.querySelector("h3").textContent = project.title;
     template.querySelector("img").setAttribute("src", project.logo);
     template.querySelector("img").setAttribute("alt", project.alt);
-    template.querySelector("a").setAttribute("href", project.github);
+
+    const $link = template.querySelector("a");
+    if (project.github) {
+        $link.setAttribute("href", project.github);
+        $link.setAttribute("target", "_blank");
+    } else {
+        $link.removeAttribute("href");
+        $link.style.pointerEvents = "none";
+        $link.style.opacity = "0.5";
+    }
+
     for (const technology of project.technologies) {
         const $p = document.createElement("p");
         $p.textContent = technology;

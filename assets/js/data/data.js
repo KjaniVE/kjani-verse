@@ -20,6 +20,13 @@ const _allData = {
 
     "projects": [
         {
+            "title": "Honeypot Webstore",
+            "logo": "assets/media/honeypot-logo.svg",
+            "alt": "Logo Honeypot Webstore Project",
+            "github": null,
+            "technologies": ["Python", "React", "Docker", "Nginx"]
+        },
+        {
             "title": "Home Lab",
             "logo": "assets/media/homelab-logo.svg",
             "alt": "Logo Home Lab",
@@ -27,25 +34,25 @@ const _allData = {
             "technologies": ["Proxmox", "OPNsense", "Linux", "Nginx", "Active Directory", "GitLab", "Docker"]
         },
         {
+            "title": "Network & System Pentesting",
+            "logo": "assets/media/pentesting-logo.svg",
+            "alt": "Logo Pentesting Project",
+            "github": null,
+            "technologies": ["Kali Linux", "Nmap", "Metasploit", "Burp Suite"]
+        },
+        {
+            "title": "VulnMart",
+            "logo": "assets/media/vulnmart-logo.svg",
+            "alt": "Logo VulnMart Project",
+            "github": "https://gitlab.neavon.com/kjani/vulnmart",
+            "technologies": ["Kotlin", "Python", "Flask", "SQLite", "Frida"]
+        },
+        {
             "title": "Sapphire Items",
-            "logo": "assets/media/sapphire-items-logo.webp",
+            "logo": "assets/media/sapphire-items-logo.svg",
             "alt": "Logo Sapphire Items Project",
             "github": "https://github.com/KjaniVE/SapphireItems",
             "technologies": ["Java"]
-        },
-        {
-            "title": "Labyrinth",
-            "logo": "assets/media/labyrinth-logo.svg",
-            "alt": "Logo Labyrinth Project",
-            "github": "https://github.com/KjaniVE/labyrinth-server",
-            "technologies": ["Java", "HTML", "CSS", "JavaScript"]
-        },
-        {
-            "title": "Magic The Gathering Deck Builder",
-            "logo": "assets/media/magic-the-gathering-project-logo.webp",
-            "alt": "Logo Magic The Gathering Deck Builder Project",
-            "github": "https://github.com/KjaniVE/MTGDeckBuilder",
-            "technologies": ["JavaScript"]
         }
     ]
 }

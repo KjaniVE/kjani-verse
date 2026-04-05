@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+	<polygon points="50,8 92,30 92,70 50,92 8,70 8,30" fill="#0d1a33" stroke="#7c3aed" stroke-width="2.5"/>
+	<polygon points="50,22 70,35 70,62 50,75 30,62 30,35" fill="none" stroke="#a78bfa" stroke-width="1.2" opacity="0.5"/>
+	<text x="50" y="46" text-anchor="middle" font-family="monospace" font-size="13" fill="#a78bfa" font-weight="bold">SI</text>
+	<text x="50" y="63" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#c4b5fd">SAPPHIRE</text>
+</svg>

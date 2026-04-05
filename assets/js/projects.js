@@ -1,6 +1,6 @@
 import {_allData as DATA} from './data/data.js';
 
-if (window.location.pathname === "/projects.html") {
+if (window.location.pathname.includes("projects.html")) {
     init();
 }
 
@@ -19,7 +19,6 @@ function renderProjects(data) {
 }
 
 function createProjectElement(project, template) {
-    template.setAttribute("href", project.github);
     template.querySelector("h3").textContent = project.title;
     template.querySelector("img").setAttribute("src", project.logo);
     template.querySelector("img").setAttribute("alt", project.alt);
@@ -27,10 +26,19 @@ function createProjectElement(project, template) {
     for (const technology of project.technologies) {
         const $button = document.createElement("button");
         $button.textContent = technology;
+        $button.disabled = true;
         template.querySelector(".proj-tech").insertAdjacentElement("beforeend", $button);
     }
 
-    return template
+    if (project.github) {
+        const $wrapper = document.createElement("a");
+        $wrapper.setAttribute("href", project.github);
+        $wrapper.setAttribute("target", "_blank");
+        $wrapper.appendChild(template);
+        return $wrapper;
+    }
+
+    return template;
 }
 
 export {createProjectElement};
